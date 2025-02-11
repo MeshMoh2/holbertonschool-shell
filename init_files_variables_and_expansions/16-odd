@@ -1,2 +1,2 @@
 #!/bin/bash
-paste -d '\n' - - | cut -f1 -d$'\t'
+nl | grep -E '^[0-9]*[13579]\s' | cut -f2-
